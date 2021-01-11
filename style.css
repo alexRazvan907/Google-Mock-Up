@@ -1,0 +1,114 @@
+*{   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} 
+body{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav img{
+    width:30px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.google {
+    width: 300px;
+}
+.content input{
+    max-width: 700px;
+    width: 35vw;
+    border-radius: 20px;
+    padding: 10px 25px 10px 50px;
+    margin-top: 20px;
+    border: solid rgb(112,112,112) 1px;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36, .28);
+    transition: top 0.4s ease,transform 0.4s ease;
+}
+.content .searchBar {
+    position: relative;
+}
+
+.content .searchBar img{
+    position: absolute;
+}
+.content .searchBar img:nth-child(2){
+    top: 23px;
+    left: 0;
+    clip-path: circle(29%);
+}
+.content .searchBar img:last-child {
+    top: 22px;
+    right: 4px;
+    width: 32px;
+    clip-path: circle(37%);
+}
+.btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding: 11px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 5px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    justify-content: space-between;
+    background: #EEEEEE;
+    border-top: solid rgba(112,112,112,.38) 1px;
+    height: 35px;
+}
+
+footer li a,
+nav li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #707070;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: height 0.3s ease-in-out 0s;
+}
+
+footer li,
+nav li {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+footer li a,
+nav li a:hover{
+    color:#3d3636;
+    text-decoration: underline;
+}
